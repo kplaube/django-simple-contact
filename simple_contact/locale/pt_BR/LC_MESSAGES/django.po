@@ -1,0 +1,24 @@
+# Português do Brasil translation of Simple Contact 
+# Copyright (C) 2012 Klaus Laube
+# This file is distributed under the same license as the Simple Contact package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-13 20:13-0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Klaus Laube <kplaube@gmail.com>\n"
+"Language-Team: \n"
+"Language: Brazilian Portuguese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: views.py:23
+msgid "Your message was sent successfully! Thank you."
+msgstr "Sua mensagem foi enviada com sucesso! Obrigado."
+
+#: views.py:29
+msgid "Oops! Are you sure that the form was filled out correctly?"
+msgstr "Ops! Você tem certeza que preencheu todos os campos do formulário?"
