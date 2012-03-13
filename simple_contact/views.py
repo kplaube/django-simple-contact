@@ -6,7 +6,7 @@ from django.views.generic import FormView
 
 from django.contrib import messages
 
-from contact.forms import ContactForm
+from simple_contact.forms import ContactForm
 
 
 class ContactView(FormView):
@@ -15,7 +15,7 @@ class ContactView(FormView):
     submission.
     """
     form_class = ContactForm
-    template_name = 'contact/contact_form.html'
+    template_name = 'simple_contact/contact_form.html'
 
     def form_valid(self, form):
         form.send()

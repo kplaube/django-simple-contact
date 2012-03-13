@@ -1,7 +1,7 @@
 from django.core import mail
 from django.test import TestCase
 
-from contact.forms import ContactForm
+from simple_contact.forms import ContactForm
 
 
 class ContactFormTests(TestCase):

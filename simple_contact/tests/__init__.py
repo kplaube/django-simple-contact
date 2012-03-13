@@ -1,2 +1,2 @@
-from contact.tests.forms import *
-from contact.tests.views import *
+from simple_contact.tests.forms import *
+from simple_contact.tests.views import *
