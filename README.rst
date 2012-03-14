@@ -7,10 +7,19 @@ a little time in your development.
 Installation
 ------------
 
-1. Clone the source: ``git clone https://github.com/kplaube/django-simple-contact``
-2. Put ``simple_contact`` on your path, or install using setuptools: ``python setup.py install``
-3. Add ``'simple_contact'`` to your ``INSTALLED_APPS`` in your project's settings.py
-4. Add URLs entries: ``url(r'^contact/', include('simple_contact.urls'))``
+Using pip:
+
+* ``pip install django-simple-contact``
+
+Using the source code:
+
+* Clone the source: ``git clone https://github.com/kplaube/django-simple-contact``
+* Put ``simple_contact`` on your path, or install using setuptools: ``python setup.py install``
+
+Configuring:
+
+* Add ``'simple_contact'`` to your ``INSTALLED_APPS`` in your project's settings.py
+* Add URLs entries: ``url(r'^contact/', include('simple_contact.urls'))``
 
 
 Templates
