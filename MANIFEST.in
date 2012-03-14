@@ -1,0 +1,4 @@
+include README
+include LICENSE
+recursive-include simple_contact/locale *.po *.mo
+recursive-include simple_contact/templates *.html
