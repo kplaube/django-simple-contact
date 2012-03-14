@@ -4,6 +4,8 @@ from django.test import TestCase
 
 
 class ContactViewsTests(TestCase):
+    urls = 'simple_contact.urls'
+
     def test_contact_view(self):
         """
         Ensure that contact view can respond to GET and POST.
