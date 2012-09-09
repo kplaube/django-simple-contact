@@ -1,3 +1,8 @@
+Django Simple Contact
+=====================
+
+.. image:: https://secure.travis-ci.org/kplaube/django-simple-contact.png
+
 **Django Simple Contact** is a pluggable application that renders a simple
 contact form to your Django project.
 
