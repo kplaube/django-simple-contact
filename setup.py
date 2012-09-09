@@ -2,6 +2,10 @@ from setuptools import setup
 from simple_contact import get_version
 
 
+requires = [
+    'bleach',
+]
+
 setup(
     name='django-simple-contact',
     version=get_version(),
@@ -21,6 +25,7 @@ setup(
     test_suite='runtests.runtests',
     include_package_data=True,
     zip_safe=False,
+    install_requires=requires,
 
     classifiers=[
         'Environment :: Plugins',
