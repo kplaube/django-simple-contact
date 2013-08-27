@@ -2,9 +2,13 @@ Django Simple Contact
 =====================
 
 .. image:: https://secure.travis-ci.org/kplaube/django-simple-contact.png
-    :alt: Travis Status
-.. image:: https://pypip.in/v/django-simple-contact/badge.png
-    :alt: Latest PyPI version
+    :target: https://travis-ci.org/kplaube/django-simple-contact
+.. image:: https://coveralls.io/repos/kplaube/django-simple-contact/badge.png
+    :target: https://coveralls.io/r/kplaube/django-simple-contact
+.. image:: https://badge.fury.io/py/django-simple-contact.png
+    :target: http://badge.fury.io/py/django-simple-contact
+.. image:: https://pypip.in/d/django-simple-contact/badge.png
+    :target: https://crate.io/packages/django-simple-contact/
 
 **Django Simple Contact** is a pluggable application that renders a simple
 contact form to your Django project.
