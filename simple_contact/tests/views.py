@@ -1,5 +1,5 @@
 from django.core import mail
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.test import TestCase
 
 
@@ -10,6 +10,7 @@ class ContactViewsTests(TestCase):
         """
         Ensure that contact view can respond to GET and POST.
         """
+
         # Get
         response = self.client.get(reverse('contact-contact'))
         self.assertEquals(response.status_code, 200)
