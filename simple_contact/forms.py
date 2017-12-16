@@ -1,8 +1,6 @@
-# -*- coding: utf-8 -*-
-
 import bleach
-from django.core.mail import EmailMessage, get_connection
 from django import forms
+from django.core.mail import EmailMessage, get_connection
 from django.template.loader import render_to_string
 from django.utils.translation import ugettext_lazy as _
 
@@ -33,7 +31,7 @@ class ContactForm(forms.Form):
         )
 
         message = render_to_string('simple_contact/contact_email.html',
-            self.cleaned_data)
+                                   self.cleaned_data)
         connection.open()
 
         mail = EmailMessage(

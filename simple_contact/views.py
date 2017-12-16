@@ -1,10 +1,7 @@
-# -*- coding: utf-8 -*-
-
+from django.contrib import messages
 from django.urls import reverse
 from django.utils.translation import ugettext_lazy as _
 from django.views.generic import FormView
-
-from django.contrib import messages
 
 from simple_contact.forms import ContactForm
 
@@ -19,14 +16,18 @@ class ContactView(FormView):
 
     def form_valid(self, form):
         form.send()
-        messages.success(self.request,
-            _('Your message was sent successfully! Thank you.'))
+        messages.success(
+            self.request,
+            _('Your message was sent successfully! Thank you.')
+        )
 
         return super(ContactView, self).form_valid(form)
 
     def form_invalid(self, form):
-        messages.error(self.request,
-            _('Oops! Are you sure that the form was filled out correctly?'))
+        messages.error(
+            self.request,
+            _('Oops! Are you sure that the form was filled out correctly?')
+        )
 
         return super(ContactView, self).form_invalid(form)
 

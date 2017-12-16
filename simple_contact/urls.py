@@ -1,4 +1,5 @@
 from django.urls import path
+
 from simple_contact.views import ContactView
 
 urlpatterns = [
