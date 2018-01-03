@@ -18,18 +18,25 @@ class ContactForm(forms.Form):
     subject = forms.CharField(label=_('Subject'), max_length=255)
     message = forms.CharField(label=_('Message'), widget=forms.Textarea())
 
-    def send(self, to_email=settings.SITE_EMAIL):
+    def clean_message(self):
         """
-        Send an email message to site administrator with parameters
-        filled with form field.
+        Prevents special characters to be added to the email
+        body.
         """
-        self.cleaned_data['message'] = bleach.clean(
-            self.cleaned_data['message'],
+        message = self.cleaned_data['message']
+
+        return bleach.clean(
+            message,
             tags=settings.ALLOWED_TAGS,
             attributes=settings.ALLOWED_ATTRIBUTES,
             strip_comments=True,
         )
 
+    def send(self, to_email=settings.SITE_EMAIL):
+        """
+        Send an email message to site administrator with parameters
+        filled with form field.
+        """
         message = render_to_string('simple_contact/contact_email.html',
                                    self.cleaned_data)
         connection.open()
