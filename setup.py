@@ -4,6 +4,7 @@ from simple_contact import get_version
 
 requires = [
     'bleach',
+    'django',
 ]
 
 setup(
@@ -21,8 +22,7 @@ setup(
 
     url='https://github.com/kplaube/django-simple-contact',
     packages=['simple_contact', ],
-    tests_require=['django>=1.3,<=1.6', ],
-    test_suite='runtests',
+    test_suite='runtests.run_tests',
     include_package_data=True,
     zip_safe=False,
     install_requires=requires,

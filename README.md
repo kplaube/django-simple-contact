@@ -37,3 +37,13 @@ If you want your own markup (of course you do!), it's possible by overwritting t
 
 * `templates/simple_contact/contact_form.html`
 * `templates/simple_contact/contact_email.html`
+
+## Tests
+
+Tests are a good idea, and we do our best to make it "as seamless as possible":
+
+```
+$ python setup.py test
+```
+
+It'll solve the project's dependencies and run the test suite.
