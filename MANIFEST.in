@@ -1,4 +1,5 @@
 include README.rst
 include LICENSE
+include requirements*.txt
 recursive-include simple_contact/locale *.po *.mo
 recursive-include simple_contact/templates *.html

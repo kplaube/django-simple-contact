@@ -1,11 +1,8 @@
+from os.path import dirname, join
 from setuptools import setup
 from simple_contact import get_version
 
-
-requires = [
-    'bleach',
-    'django',
-]
+requires = open(join(dirname(__file__), 'requirements.txt')).readlines()
 
 setup(
     name='django-simple-contact',
