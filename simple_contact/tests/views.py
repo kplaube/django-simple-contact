@@ -1,6 +1,10 @@
 from django.core import mail
 from django.test import TestCase
-from django.urls import reverse
+
+try:
+    from django.urls import reverse
+except ImportError:  # Django 1.8 support
+    from django.core.urlresolvers import reverse
 
 
 class ContactViewsTests(TestCase):

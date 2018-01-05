@@ -21,4 +21,5 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
 ]
+MIDDLEWARE_CLASSES = MIDDLEWARE  # For Django 1.8 support
 EMAIL_BACKEND = 'django.core.mail.backends.locmem.EmailBackend'
