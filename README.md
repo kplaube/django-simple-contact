@@ -28,15 +28,15 @@ $ python setup develop
 
 Configuring:
 
-* Add `simple_contact` to `INSTALLED_APPS` in your `settings.py`.
-* Add the URL entries: `path('contact/', include('simple_contact.urls'))`
+- Add `simple_contact` to `INSTALLED_APPS` in your `settings.py`.
+- Add the URL entries: `path('contact/', include('simple_contact.urls'))`
 
 ## Templates
 
 If you want your own markup (of course you do!), it's possible by overwritting the following templates:
 
-* `templates/simple_contact/contact_form.html`
-* `templates/simple_contact/contact_email.html`
+- `templates/simple_contact/contact_form.html`
+- `templates/simple_contact/contact_email.html`
 
 ## Tests
 

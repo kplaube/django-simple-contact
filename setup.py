@@ -19,7 +19,6 @@ setup(
 
     url='https://github.com/kplaube/django-simple-contact',
     packages=['simple_contact', ],
-    test_suite='runtests.run_tests',
     include_package_data=True,
     zip_safe=False,
     install_requires=requires,
