@@ -1,4 +1,7 @@
 -r requirements.txt
 
+coveralls
+coverage
 tox
 tox-pyenv
+tox-travis
